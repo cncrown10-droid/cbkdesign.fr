@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web design</title>
+<style>
+
+    /* Reset simple */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.4;color:#0b1220}
+    a{color:inherit;text-decoration:none}
+
+    /* Layout */
+    header{position:fixed;top:0;left:0;right:0;backdrop-filter: blur(4px);background:rgba(255,255,255,0.7);border-bottom:1px solid rgba(11,18,32,0.06);z-index:60}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+
+    .brand{display:flex;gap:12px;align-items:center;font-weight:700}
+    .brand .logo{width:42px;height:42px;border-radius:8px;background:linear-gradient(135deg,#0ea5a4,#7c3aed);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+
+
+ /* Services */
+    #services{padding:60px 0}
+    .section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,18,30,0.04);border:1px solid rgba(11,18,32,0.04)}
+    .card h3{margin:8px 0 6px}
+    .card p{margin:0;color:#475569;font-size:0.95rem}
+    .card .badge{display:inline-block;padding:6px 8px;border-radius:999px;font-size:0.82rem;background:#eef2ff;color:#4c1d95;margin-bottom:8px}
+
+    /* Bouton Voir l’offre / Commander */
+    .offer-btn, .order-btn {
+      display:inline-block;
+      margin-top:12px;
+      padding:10px 16px;
+      border-radius:8px;
+      background:#0b3d91;
+      color:#fff;
+      font-weight:600;
+      text-align:center;
+      transition:0.3s;
+    }
+    .offer-btn:hover, .order-btn:hover { background:#092f74; }
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr;}
+      .preview-card{order:2}
+      .cards{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:640px){
+      header{position:fixed}
+      .hamburger{display:flex}
+      nav ul{position:fixed;top:64px;left:0;right:0;background:#fff;flex-direction:column;padding:16px;border-top:1px solid rgba(11,18,32,0.04);transform:translateY(-120%);transition:transform .28s ease;z-index:50}
+      nav ul.open{transform:translateY(0)}
+      nav ul li{width:100%}
+      nav a{display:block;width:100%}
+      .cards{grid-template-columns:1fr}
+      .hero{padding-top:88px}
+    }
+
+    footer{padding:36px 0;border-top:1px solid rgba(11,18,32,0.04);margin-top:40px}
+</style>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Services web — types de sites que je propose</h2>
+            <div class="muted small">Choisis le type qui correspond le mieux à ton besoin. Chaque type inclut design responsive, mise en ligne et formation courte.</div>
+          </div>
+          <div class="small muted">À partir de <strong>100 $</strong> (prix indicatif)</div>
+        </div>
+
+        <div class="cards">
+
+          <article class="card">
+            <div class="badge">Portfolio</div>
+            <h3>Portfolio créatif</h3>
+            <p>Site épuré pour présenter tes projets, galeries d'images, pages de contact et téléchargements. Idéal pour photographes, designers, artistes.</p>
+            <p class="small muted" style="margin-top:10px">Inclus : galerie lightbox, filtrage par catégorie.</p>
+            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
+          </article>
+
+          <article class="card">
+            <div class="badge">Vitrine</div>
+            <h3>Site vitrine</h3>
+            <p>Présente ton entreprise, tes services, tarifs et avis clients. Pages simples, navigation claire et formulaire de contact fonctionnel.</p>
+            <p class="small muted" style="margin-top:10px">Inclus : section "tarifs" et FAQ.</p>
+            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
+          </article>
+
+          <article class="card">
+            <div class="badge">Ecommerce</div>
+            <h3>Boutique en ligne</h3>
+            <p>Catalogue produits, panier, paiement (intégration Stripe/PayPal), gestion de commandes et pages produits optimisées pour la conversion.</p>
+            <p class="small muted" style="margin-top:10px">Option multilingue & livraison configurable.</p>
+            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
+          </article>
+
+          <article class="card">
+            <div class="badge">Landing</div>
+            <h3>Landing Page / Page de vente</h3>
+            <p>Page unique optimisée pour convertir (inscriptions, promotions, campagnes). Chargement rapide et design axé CTA.</p>
+            <p class="small muted" style="margin-top:10px">Integration analytics & formulaire de capture.</p>
+<a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>          
+          </article>
+
+          <article class="card">
+            <div class="badge">Blog</div>
+            <h3>Blog / Site éditorial</h3>
+            <p>Plateforme simple pour publier des articles, gérer catégories et auteurs. Optimisé SEO et lecture mobile.</p>
+            <p class="small muted" style="margin-top:10px">Pagination, recherche et partages sociaux.</p>
+            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
+          </article>
+
+          <article class="card">
+            <div class="badge">Web App</div>
+            <h3>Application web légère</h3>
+            <p>Outils métiers simples (prise de rendez-vous, gestion clients, formulaires avancés). Déploiement sur serveur ou cloud.</p>
+            <p class="small muted" style="margin-top:10px">API possible / Authentification.</p>
+            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
+          </article>
+
+        </div>
+
+        <div style="margin-top:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <a class="cta" href="contact.html">Demander un devis</a>
+        </div>
+
+      </div>
+    </section>
+
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+      <div>
+        <div style="font-weight:700">CBK Design</div>
+        <div class="muted small">Imprimerie & design — cbkdesign.com</div>
+      </div>
+
+     <div class="social-buttons" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <a href="https://www.instagram.com/barackcharron?igsh=MXJxdmxsNXlqenk1Yg==" target="_blank" class="social-btn insta">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@BarackCharron" target="_blank" class="social-btn yt">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://wa.me/243979554447" target="_blank" class="social-btn whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+      
+      <div class="muted small">© CBK Design — Tous droits réservés</div>
+    </div>
+  </footer> 
+</body>
+</html>
