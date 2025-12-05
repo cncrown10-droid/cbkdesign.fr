@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web template</title>
+
+  <style>
+    :root{
+      --brand:#0ea5a4; --dark:#0b1220; --muted:#6b7280; --card:#fff; --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;color:var(--dark);background:#f7faf9;line-height:1.5}
+    .wrap{max-width:980px;margin:28px auto;padding:20px}
+    h1{margin:18px 0 6px;font-size:clamp(24px,4vw,32px)}
+    p.lead{color:var(--muted)}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+    input,textarea{padding:12px;border-radius:var(--radius);border:1px solid rgba(11,18,32,0.06);width:100%}
+    textarea{grid-column:1 / -1}
+    button{padding:12px 16px;border:none;border-radius:10px;background:var(--brand);color:#fff;font-weight:600;width:160px;cursor:pointer}
+    .contact-info, .about-us{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 8px 24px rgba(12,18,30,0.06);margin-top:20px}
+    .contact-info ul, .about-us ul{padding-left:18px;color:var(--muted)}
+    a.btn-light{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;text-decoration:none;background:#f1f5f9;color:var(--dark);font-weight:700}
+    .footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #222;
+    color: white;
+    }
+    @media(max-width:640px){form{grid-template-columns:1fr}}
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+   
+<!-- Section Exemple / Template -->
+<div class="template-demo" style="
+  max-width:980px;
+  margin:40px auto;
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.08);
+">
+  <h2 style="margin-top:0">Aperçu d’un Site que Nous Réalisons</h2>
+  <p style="color:#6b7280;margin-bottom:18px">
+    Voici un exemple de site moderne et rapide que nous pouvons créer pour vous.
+  </p>
+
+  <div style="overflow:hidden;border-radius:12px;">
+    <img src="image/Screenshot From 2025-12-03 23-32-44.png" alt="Exemple de site web" style="width:100%;display:block;">
+  </div>
+
+  <div><a href="index.html" class="btn-light"><i class="fa-solid fa-arrow-left"></i> Retour à la page d'acueil</a></div>
+    </div>
+</div>
+ 
+</body>
+</html>
