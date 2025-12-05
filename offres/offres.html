@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web design</title>
-<style>
+    <title>portfolio template</title>
+    <style>
+         .container{max-width:1100px;margin:0 auto;padding:0 20px}
+   
+        body { font-family:Inter, sans-serif; margin:0; padding:32px; background:#f7f9fc; color:#0b1220; }
+  .box {
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:28px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.07);
+  }
+  h1 { margin-top:0; }
+  .price {
+    font-size:1.8rem;
+    font-weight:700;
+    color:#0ea5a4;
+    margin:20px 0;
+  }
+  ul li { margin-bottom:8px; }
+  .btn {
+    display:inline-block;
+    margin-top:22px;
+    padding:12px 18px;
+    background:#0ea5a4;
+    color:white;
+    border-radius:10px;
+    font-weight:600;
+    font-size:1rem;
+  }
 
-    /* Reset simple */
-    *,*::before,*::after{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.4;color:#0b1220}
-    a{color:inherit;text-decoration:none}
-
-    /* Layout */
-    header{position:fixed;top:0;left:0;right:0;backdrop-filter: blur(4px);background:rgba(255,255,255,0.7);border-bottom:1px solid rgba(11,18,32,0.06);z-index:60}
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
-    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
-
-    .brand{display:flex;gap:12px;align-items:center;font-weight:700}
-    .brand .logo{width:42px;height:42px;border-radius:8px;background:linear-gradient(135deg,#0ea5a4,#7c3aed);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
-
-
- /* Services */
-    #services{padding:60px 0}
+#services{padding:60px 0}
     .section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,18,30,0.04);border:1px solid rgba(11,18,32,0.04)}
@@ -43,6 +57,15 @@
     }
     .offer-btn:hover, .order-btn:hover { background:#092f74; }
 
+    .footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #222;
+    color: white;
+    }
+    @media(max-width:640px){form{grid-template-columns:1fr}}
+
     /* Responsive */
     @media (max-width:900px){
       .hero-grid{grid-template-columns:1fr;}
@@ -60,106 +83,169 @@
       .hero{padding-top:88px}
     }
 
-    footer{padding:36px 0;border-top:1px solid rgba(11,18,32,0.04);margin-top:40px}
-</style>
+      a.btn-light{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;text-decoration:none;background:#f1f5f9;color:var(--dark);font-weight:700}
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
-    <!-- SERVICES -->
-    <section id="services">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Services web — types de sites que je propose</h2>
-            <div class="muted small">Choisis le type qui correspond le mieux à ton besoin. Chaque type inclut design responsive, mise en ligne et formation courte.</div>
-          </div>
-          <div class="small muted">À partir de <strong>100 $</strong> (prix indicatif)</div>
-        </div>
+          <div><a href="../index.html" class="btn-light"><i class="fa-solid fa-arrow-left"></i> Retour au site</a></div>
 
-        <div class="cards">
+<section id="services">
+    <div class="container">    
+<article class="card">
+  <h1>Offre Portfolio Créatif</h1>
 
-          <article class="card">
-            <div class="badge">Portfolio</div>
-            <h3>Portfolio créatif</h3>
-            <p>Site épuré pour présenter tes projets, galeries d'images, pages de contact et téléchargements. Idéal pour photographes, designers, artistes.</p>
-            <p class="small muted" style="margin-top:10px">Inclus : galerie lightbox, filtrage par catégorie.</p>
-            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
-          </article>
+  <div class="price">À partir de 120 $</div>
 
-          <article class="card">
-            <div class="badge">Vitrine</div>
-            <h3>Site vitrine</h3>
-            <p>Présente ton entreprise, tes services, tarifs et avis clients. Pages simples, navigation claire et formulaire de contact fonctionnel.</p>
-            <p class="small muted" style="margin-top:10px">Inclus : section "tarifs" et FAQ.</p>
-            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
-          </article>
+  <h3>Ce qui est inclus :</h3>
+  <ul>
+    <li>Design moderne et responsive</li>
+    <li>Galeries d’images + Lightbox</li>
+    <li>Page “À propos” + “Contact”</li>
+    <li>Optimisation vitesse & SEO basique</li>
+    <li>Mise en ligne incluse (GitHub ou OVH)</li>
+  </ul>
 
-          <article class="card">
-            <div class="badge">Ecommerce</div>
-            <h3>Boutique en ligne</h3>
-            <p>Catalogue produits, panier, paiement (intégration Stripe/PayPal), gestion de commandes et pages produits optimisées pour la conversion.</p>
-            <p class="small muted" style="margin-top:10px">Option multilingue & livraison configurable.</p>
-            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
-          </article>
+  <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i>Commander</a>
+  </article>
 
-          <article class="card">
-            <div class="badge">Landing</div>
-            <h3>Landing Page / Page de vente</h3>
-            <p>Page unique optimisée pour convertir (inscriptions, promotions, campagnes). Chargement rapide et design axé CTA.</p>
-            <p class="small muted" style="margin-top:10px">Integration analytics & formulaire de capture.</p>
-<a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>          
-          </article>
+<article class="card">
+  <h1>Site Vitrine Professionnel</h1>
 
-          <article class="card">
-            <div class="badge">Blog</div>
-            <h3>Blog / Site éditorial</h3>
-            <p>Plateforme simple pour publier des articles, gérer catégories et auteurs. Optimisé SEO et lecture mobile.</p>
-            <p class="small muted" style="margin-top:10px">Pagination, recherche et partages sociaux.</p>
-            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
-          </article>
+  <div class="price">À partir de 150 $</div>
 
-          <article class="card">
-            <div class="badge">Web App</div>
-            <h3>Application web légère</h3>
-            <p>Outils métiers simples (prise de rendez-vous, gestion clients, formulaires avancés). Déploiement sur serveur ou cloud.</p>
-            <p class="small muted" style="margin-top:10px">API possible / Authentification.</p>
-            <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
-          </article>
+  <p>Parfait pour entreprises, artisans, services, associations, restaurants, cabinets, etc.</p>
 
-        </div>
+  <h3>Inclus :</h3>
+  <ul>
+    <li>5 sections : Home, Services, À propos, Galerie, Contact</li>
+    <li>Design premium + animations</li>
+    <li>Formulaire contact professionnel</li>
+    <li>Optimisation vitesse + SEO local</li>
+    <li>Adapté mobile/tablettes</li>
+  </ul>
 
-        <div style="margin-top:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-          <a class="cta" href="contact.html">Demander un devis</a>
-        </div>
+  <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
+</article>
 
-      </div>
-    </section>
+<article class="card">
+  <h1>Blog Professionnel</h1>
+  <div class="price">À partir de 130 $</div>
+  <h3>Inclus :</h3>
+  <ul>
+    <li>Page articles dynamique</li>
+    <li>Système de catégories</li>
+    <li>Page lecture d’article</li>
+    <li>Design moderne + lisibilité optimisée</li>
+    <li>SEO blog expert</li>
+  </ul>
+  <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
+</article>
+
+<article class="card">
+  <h1>Site E-commerce complet</h1>
+
+  <div class="price">À partir de 280 $</div>
+
+  <p>Pour vendre vos produits en ligne avec un système simple et sécurisé.</p>
+
+  <h3>Inclus :</h3>
+  <ul>
+    <li>Catalogue produits + catégories</li>
+    <li>Panier + Page paiement</li>
+    <li>Paiement sécurisé (Stripe/PayPal)</li>
+    <li>Gestion commandes + stock</li>
+    <li>SEO optimisé + vitesse améliorée</li>
+  </ul>
+
+  <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
+</article>
 
 
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
-      <div>
-        <div style="font-weight:700">CBK Design</div>
-        <div class="muted small">Imprimerie & design — cbkdesign.com</div>
-      </div>
+<article class="card">
+  <h1>Landing Page Marketing</h1>
+  <div class="price">À partir de 90 $</div>
+  <p>Parfait pour campagnes Facebook Ads / Google Ads / lancement produit.</p>
+  <h3>Inclus :</h3>
+  <ul>
+    <li>Design impactant + section CTA</li>
+    <li>Collecte emails intégrée</li>
+    <li>Version mobile hyper optimisée</li>
+    <li>Chargement ultra rapide</li>
+    <li>Edition facile</li>
+  </ul>
 
-     <div class="social-buttons" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
-      <a href="https://www.instagram.com/barackcharron?igsh=MXJxdmxsNXlqenk1Yg==" target="_blank" class="social-btn insta">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://www.youtube.com/@BarackCharron" target="_blank" class="social-btn yt">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
-      <a href="https://wa.me/243979554447" target="_blank" class="social-btn whatsapp">
+  <a class="btn btn-primary" href="../contact.html" class="btn"><i class="fa-solid fa-paper-plane"></i>Commander</a>
+</article>
+
+
+<article class="card">
+  <h1>Application Web sur mesure</h1>
+
+  <div class="price">À partir de 480 $</div>
+
+  <p>Pour projets avancés : systèmes internes, tableaux de bord, plateformes, outils métiers.</p>
+
+  <ul>
+    <li>Interface dynamique (JavaScript / API)</li>
+    <li>Dashboard + authentification</li>
+    <li>Base de données (selon besoin)</li>
+    <li>Design professionnel et clair</li>
+    <li>Accompagnement complet</li>
+  </ul>
+
+  <a class="btn btn-primary" href="../contact.html"><i class="fa-solid fa-paper-plane"></i> Commander</a>
+</article>
+</div>
+</section>
+
+
+    <footer>
+    <footer style="
+  padding:36px 0;
+  border-top:1px solid rgba(11,18,32,0.06);
+  margin-top:40px;
+  background:#fff;
+">
+  <div class="container" style="
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+  ">
+    
+    <!-- Bloc logo -->
+    <div>
+      <div style="font-weight:700; font-size:18px;">CBK Design</div>
+      <div style="color:#6b7280; font-size:0.9rem;">Imprimerie & Web — cbkdesign.com</div>
+    </div>
+
+    
+    <div style="display:flex; gap:14px; font-size:22px;">
+      <a href="https://wa.me/243979554447" target="_blank" style="color:#25D366;">
         <i class="fa-brands fa-whatsapp"></i>
       </a>
+      <a href="https://www.instagram.com/barackcharron?igsh=MXJxdmxsNXlqenk1Yg==" target="_blank" style="color:#E1306C;">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@BarackCharron" target="_blank" style="color:#FF0000;">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
     </div>
-      
-      <div class="muted small">© CBK Design — Tous droits réservés</div>
+
+    <!-- Copyright -->
+    <div style="color:#6b7280; font-size:0.9rem;">
+      © 2025 CBK Design — Tous droits réservés
     </div>
-  </footer> 
+  </div>
+    </footer>
+
 </body>
 </html>
